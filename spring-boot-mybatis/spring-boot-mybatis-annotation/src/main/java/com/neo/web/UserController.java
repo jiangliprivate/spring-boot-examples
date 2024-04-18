@@ -16,13 +16,13 @@ public class UserController {
 	@Autowired
 	private UserMapper userMapper;
 	
-	@RequestMapping("/getUsers")
+	@RequestMapping("/getUsers") //http://localhost:8080/getUsers
 	public List<User> getUsers() {
 		List<User> users=userMapper.getAll();
 		return users;
 	}
 	
-    @RequestMapping("/getUser")
+    @RequestMapping("/getUser") //http://localhost:8080/getUser?id=28
     public User getUser(Long id) {
     	User user=userMapper.getOne(id);
         return user;
