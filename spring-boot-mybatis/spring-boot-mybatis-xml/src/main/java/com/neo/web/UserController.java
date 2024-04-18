@@ -27,6 +27,12 @@ public class UserController {
     	User user=userMapper.getOne(id);
         return user;
     }
+
+    @RequestMapping("/getUser1")
+    public User getUser1(Long id) {
+        User user=userMapper.getOne1(id);
+        return user;
+    }
     
     @RequestMapping("/add")
     public void save(User user) {
