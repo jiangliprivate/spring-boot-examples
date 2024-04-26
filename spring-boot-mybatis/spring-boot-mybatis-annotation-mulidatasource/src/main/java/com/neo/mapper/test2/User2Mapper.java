@@ -6,6 +6,7 @@ import com.neo.model.User;
 import com.neo.enums.UserSexEnum;
 import org.apache.ibatis.annotations.*;
 
+@Mapper
 public interface User2Mapper {
 
 

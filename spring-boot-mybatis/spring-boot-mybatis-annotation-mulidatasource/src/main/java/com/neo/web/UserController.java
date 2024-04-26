@@ -20,12 +20,18 @@ public class UserController {
 	@Autowired
 	private User2Mapper user2Mapper;
 	
-	@RequestMapping("/getUsers")
-	public List<User> getUsers() {
+	@RequestMapping("/getUsers1")
+	public List<User> getUsers1() {
 		List<User> users=user1Mapper.getAll();
 		return users;
 	}
-	
+
+    @RequestMapping("/getUsers2")
+    public List<User> getUsers2() {
+        List<User> users=user2Mapper.getAll();
+        return users;
+    }
+
     @RequestMapping("/getUser")
     public User getUser(Long id) {
     	User user=user2Mapper.getOne(id);

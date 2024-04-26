@@ -25,6 +25,21 @@
 	</properties>
 
 
+	<!--不设置国内仓库地址,依赖是下载不下来的-->
+	<repositories>
+		<repository>
+			<id>aliyun</id>
+			<name>aliyun</name>
+			<url>https://maven.aliyun.com/repository/public</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
 	<dependencies>
 	     <dependency>
 	        <groupId>org.springframework.boot</groupId>
