@@ -54,6 +54,7 @@
         <module>spring-boot-elasticsearch</module>
         <module>spring-boot-file-upload</module>
         <module>spring-boot-hello</module>
+        <module>spring-boot-bean</module>
         <module>spring-boot-gson</module>
         <module>spring-boot-helloWorld</module>
         <module>spring-boot-jpa/spring-boot-jpa</module>
