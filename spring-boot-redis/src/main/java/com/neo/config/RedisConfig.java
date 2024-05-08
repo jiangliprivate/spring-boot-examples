@@ -12,8 +12,8 @@ import org.springframework.data.redis.cache.RedisCacheManager;
 import org.springframework.data.redis.core.RedisTemplate;
 
 
-@Configuration
-@EnableCaching
+//@Configuration
+//@EnableCaching
 public class RedisConfig extends CachingConfigurerSupport{
 	
 	@Bean
