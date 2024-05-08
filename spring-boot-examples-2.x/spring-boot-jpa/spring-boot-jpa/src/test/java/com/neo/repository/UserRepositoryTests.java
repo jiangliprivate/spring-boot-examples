@@ -29,6 +29,7 @@ public class UserRepositoryTests {
 		userRepository.save(new User("aa", "aa123456","aa@126.com", "aa",  formattedDate));
 		userRepository.save(new User("bb", "bb123456","bb@126.com", "bb",  formattedDate));
 		userRepository.save(new User("cc", "cc123456","cc@126.com", "cc",  formattedDate));
+		userRepository.save(new User("dd", "dd123456","dd@126.com", "dd",  formattedDate,"13026627359"));
 
 //		Assert.assertEquals(3, userRepository.findAll().size());
 //		Assert.assertEquals("bb", userRepository.findByUserNameOrEmail("bb", "bb@126.com").getNickName());

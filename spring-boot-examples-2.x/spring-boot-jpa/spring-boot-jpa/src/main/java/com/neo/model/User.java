@@ -25,6 +25,8 @@ public class User  {
     private String nickName;
     @Column(nullable = false)
     private String regTime;
+    @Column(nullable = true)
+    private String phone;
 
     public User() {
     }
@@ -35,6 +37,15 @@ public class User  {
         this.email = email;
         this.nickName = nickName;
         this.regTime = regTime;
+    }
+
+    public User(String userName, String passWord, String email, String nickName, String regTime, String phone) {
+        this.userName = userName;
+        this.passWord = passWord;
+        this.email = email;
+        this.nickName = nickName;
+        this.regTime = regTime;
+        this.phone = phone;
     }
 
     public Long getId() {
